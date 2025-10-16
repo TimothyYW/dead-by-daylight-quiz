@@ -45,7 +45,7 @@ After answering all question, depending on the amount of the answer that is corr
 
 The quiz will be focusing only on the lore of dead by daylight, with many contraversial change in the gameplay mechanic, it is amusing to just diving into the lore and the fact instead of gameplay.
 
-The font I use for the logo is Lato, whihc is similar to the original logo as can be seen below:
+The font I use for the logo is Lato, which is similar to the original logo as can be seen below:
 
 ![Dead by daylight logo](assets/screenshots/dbd-logo.png)
 
