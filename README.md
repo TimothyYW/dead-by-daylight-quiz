@@ -1,197 +1,226 @@
-# Dead by daylight quiz
+# Dead by Daylight Quiz
 
-This quiz is for fun and entertainment, by asking question that is related to the game lore and fact.
+> *"You can't escape the fog."*
 
-![Screenshot display testing result](assets/screenshots/Mock-up-screenshot.JPG)
+A browser-based trivia game for Dead by Daylight fans. Test your knowledge of survivors, killers, lore, and game facts across 10 randomized questions. How well do you know the Entity's realm?
 
-[Link to deployed site](https://timothyyw.github.io/Dead-by-daylight-quiz/)
+![Mock-up Screenshot](assets/screenshots/Mock-up-screenshot.JPG)
 
-## Feature
+[Play Now](https://timothyyw.github.io/Dead-by-daylight-quiz/)
 
-### Logo
+---
 
-Logo of the quiyz with similar color and font from originial game. It is also function as home page anchor. By clicking the logo users will be able to return back to the start screen, and users could start playing the game again.
+## About
+
+This quiz challenges your Dead by Daylight knowledge across survivors, killers, chapters, and lore. Questions shuffle every run so no two trials are alike. Your final score determines whether you are worthy of the Entity's recognition — or just another soul lost in the fog.
+
+---
+
+## Features
+
+### The Fog — Home Screen
+
+The landing page sets the atmosphere with the game's iconic dark background. An instruction panel explains the rules, and the **Start** button leads you into the trial.
+
+![Instruction Panel](assets/screenshots/instruction-screenshot.JPG)
+![Start Button](assets/screenshots/start-button-screenshot.JPG)
+
+### The Trial — Quiz
+
+- **10 randomized questions** per run — shuffled on every playthrough for replayability
+- **Progress bar** tracks how far into the trial you are
+- **Instant feedback** — correct answers glow green, wrong ones flash red with a shake
+- **Answer lock** — once selected, you cannot change your pick
+- **Next** button advances to the following question
+
+![Quiz Question](assets/screenshots/question-screenshot.JPG)
+
+### The Verdict — Score Screen
+
+After all 10 questions, your score is revealed alongside a message from the Entity:
+
+| Score | Entity's Verdict |
+|-------|-----------------|
+| 0 – 2 | "The Entity claims your soul... You belong to the fog now." |
+| 3 – 4 | "You stumbled in the darkness. Return to the fog and try again." |
+| 5 – 6 | "Not bad, Survivor. But the fog still holds secrets from you." |
+| 7 – 8 | "The Entity takes notice... Your knowledge is formidable." |
+| 9 – 10 | "You are one with the fog. The Entity bows before your knowledge!" |
+
+![Score Screen](assets/screenshots/game-result-screenshot.JPG)
+
+### Navigation
+
+The **Dead by Daylight Quiz** logo in the header always links back to the home page — your escape route when you need to leave the fog.
 
 ![Logo](assets/screenshots/logo-screenshot.JPG)
 
-#### Hero image
+---
 
-Background hero image featuring one of the iconic feature in game with dark tone and the scary atmosphere.
+## Design
 
-![Hero image](assets/images/background.jpg)
+### Visual Theme
 
-#### Index
+The quiz uses a dark horror aesthetic to match Dead by Daylight's atmosphere:
 
-Aside featuring the logo of the quiz, there is an instruction on how to play the game.
+- **Background**: Near-black (`#080510`) with a subtle, oppressive undertone
+- **Accent**: Blood red (`#8b0000`) used for borders, buttons, and glowing effects
+- **Correct answers**: Neon green glow with a pulse animation
+- **Incorrect answers**: Deep red with a shake animation
+- **Quiz container**: Pulsing red border glow that breathes in and out
+- **Logo**: Flickering text-shadow that mimics a dying light
 
-![Instruction](assets/screenshots/instruction-screenshot.JPG)
+### Typography
 
-right below the instruction, there is the start button to start the quiz.
+- **Creepster** (Google Fonts) — logo, headings, and UI labels, matching the game's horror aesthetic
+- **Roboto** (Google Fonts) — question and answer text for readability
 
-![Start quiz button](assets/screenshots/start-button-screenshot.JPG)
+![Dead by Daylight Logo Reference](assets/screenshots/dbd-logo.png)
 
-#### Game
+### Wireframes
 
-The game feature ten question that depending on the number of answers will give the user with message.
+Initial wireframes created in Balsamiq:
 
+![Index Wireframe](assets/screenshots/Index-wireframe.jpg)
+![Game Wireframe](assets/screenshots/game-wireframe.jpg)
 
-![Quiz page](assets/screenshots/question-screenshot.JPG)
-
-After answering all question, depending on the amount of the answer that is correct a message will pop-up.If too many wrong answer or below five correct answer, user will be suggested to go back and try again. While if the user answer more than five question correct, they will get notify that the entity is aware of their knowledge.
-
-![End quiz message](assets/screenshots/game-result-screenshot.JPG)
-
-#### UX
-
-The quiz will be focusing only on the lore of dead by daylight, with many contraversial change in the gameplay mechanic, it is amusing to just diving into the lore and the fact instead of gameplay.
-
-The font I use for the logo is Lato, which is similar to the original logo as can be seen below:
-
-![Dead by daylight logo](assets/screenshots/dbd-logo.png)
-
-For the text in the quiz, I use Roboto for easy read and the simply look it has.
-
-The wireframes for the index and game section as can be seen below:
-
-![Index page](assets/screenshots/Index-wireframe.jpg)
-
-![Game quiz](assets/screenshots/game-wireframe.jpg)
-
-## Future update and plan
-
-Add more questions in the near future.
-
-Add question with images.
-
-Changing score system.
+---
 
 ## Testing
 
-Testing HTML through W3C Validator and CSS using Jigsaw, screenshot of proof can be seen below:
+### Automated Validators
+
+**HTML — W3C Validator**
 
 Index:
 
-![Index test result](assets/screenshots/index-result-screenshot.JPG)
+![Index Validation](assets/screenshots/index-result-screenshot.JPG)
 
 Game:
 
-![Game test result](assets/screenshots/game-result-screenshot.JPG)
+![Game Validation](assets/screenshots/game-result-screenshot.JPG)
 
-CSS:
+**CSS — Jigsaw Validator**
 
-![CSS test result](assets/screenshots/css-test-result.JPG)
+![CSS Validation](assets/screenshots/css-test-result.JPG)
 
-Javascript:
+**Lighthouse (Chrome DevTools)**
 
--There are 10 functions in this file.
+Performance, accessibility, best practices, and SEO:
 
--Function with the largest signature take 1 arguments, while the median is 0.
+![Lighthouse Score](assets/screenshots/Lighthouse-tool-screenshot.JPG)
 
--Largest function has 8 statements in it, while the median is 5.
+**WAVE Accessibility**
 
--The most complex function has a cyclomatic complexity value of 2 while the median is 2.
+Color contrast and accessibility audit:
 
-Lighthouse devtool:
+![WAVE Result](assets/screenshots/Wave-result-screenshot.JPG)
 
-The lighthouse devtool ensure the website`s level of performance, accessabllity, best practice, and SEO. The score of the website can be seen below:
+### Manual Testing
 
-![Lighthouse test result](assets/screenshots/Lighthouse-tool-screenshot.JPG)
+| Purpose | Method | Expected | Result |
+|---------|--------|----------|--------|
+| Logo acts as home button | Click logo after finishing quiz | Returns to start page | Pass |
+| Next button appears after answering | Select an answer | Next button becomes visible | Pass |
+| Answer lock after selection | Click another answer after selecting | No change possible | Pass |
+| Correct score-based message | Complete quiz above and below score thresholds | Correct tier message displayed | Pass |
+| Questions shuffle on restart | Restart quiz and compare question order | Order differs between runs | Pass |
 
-Wave
+### JavaScript Stats
 
-The wave evaluation tool to ensure that there are no color contrasts, as can be seen in the result below:
+- 7 functions
+- Largest function signature: 1 argument (median: 0)
+- Largest function: 10 statements (median: 5)
+- Highest cyclomatic complexity: 2 (median: 2)
 
-![Wave test result](assets/screenshots/Wave-result-screenshot.JPG)
+---
 
-## Other testing
+## Known Bugs
 
-**Purpose**|**Method**|**Expected**|**Result**
-:-----:|:-----:|:-----:|:-----:
-Ensure logo response as home button|Click the logo after finishing Quiz|User return to the start page|Success
-Ensure next button appear after answering question|Answer first question to see if the button appear|Next button appear after answering the question|Success
-Ensure the user could not pick other answers once answering |Answer first question, then see if user can click other answer|User unable to pick other answer|Success
-Check if the message at the end of quiz appear depending on the amount of correct answer|Try first answering question correct above five afterward below five|User got message that is intend to them|Success
+None currently known. A previous issue where `resetState()` duplicated answer buttons was resolved by fully clearing the DOM before rendering each new question.
 
-## Technologies utilized
+---
 
-HTML is used for write the code and to built the website.
+## Technologies
 
-CSS is used style the code.
+| Technology | Purpose |
+|-----------|---------|
+| HTML5 | Page structure |
+| CSS3 | Styling and animations |
+| JavaScript (ES6) | Quiz logic and interactivity |
+| Google Fonts | Creepster and Roboto typefaces |
+| GitHub Pages | Hosting and deployment |
+| Balsamiq | Wireframing |
+| W3C Validator | HTML validation |
+| Jigsaw | CSS validation |
+| Lighthouse | Performance and accessibility audit |
+| WAVE | Color contrast and accessibility |
 
-JavaScript is to create functions for the game.
-
-Google Fonts is providing the style for the letter that is written and displayed on the website.
-
-Github is where the code will be stored.
-
-Google Chrome Lighthouse is used to check the website performance and accessibility.
-
-Balsemig is used to make the sketch wireframes for the website strucutres.
-
-W3C used to validated and ensured there are no errors on HTML code.
-
-Jigsaw is to ensure that there are no error on the CSS code.
-
-Wave is to check if there is color contrast.
-
-## Bugs
-
-There was a confusion of why is the resetState would not remove the duplicated code, but afte adjustment the code function properly.
+---
 
 ## Deployment
 
-To deploy the project please follow step below:
+Deployed via GitHub Pages:
 
-1. Log in to Github.
-2. Go to setting right next to Insight.
-3. Within setting navigate to Pages below Codespaces.
-4. Under the Branch, change from "none" to "main".
-5. Click "Save".
-6. Wait for few minute.
-7. A link will be provided.
+1. Log in to GitHub and open the repository
+2. Go to the **Settings** tab
+3. Navigate to **Pages** (under *Code and automation*)
+4. Under **Branch**, select `main` and click **Save**
+5. Wait a few minutes — a live link will appear at the top of the Pages section
+
+---
 
 ## Version Control
 
-To use version control utilizing the git command:
+```bash
+git add <file>        # Stage specific files
+git commit -m "msg"   # Commit with a descriptive message
+git push              # Push to the remote repository
+```
 
-1. Git add . will create a file with the new code that has been added
-2. Git commit is to commit the changes
-3. Git push is to add the version of the file in to the repository
-After creating new version of the file it will be commited, which means it can be viewed and compared previous and newer version.
+Each commit creates a versioned snapshot you can compare against previous states of the project.
 
-## Cloning Repository
+---
 
-For cloning repository, can be done as followed:
+## Cloning the Repository
 
-1. Open github repository
-2. Above file open drop down menu code copy URL, there are three version HTTP, SSH, and GitCLI, all version work on cloning.
-3. Open Git Bash.
-4. Type Git clone URL
+```bash
+# HTTPS
+git clone https://github.com/timothyyw/Dead-by-daylight-quiz.git
 
-## Credit
+# SSH
+git clone git@github.com:timothyyw/Dead-by-daylight-quiz.git
+```
 
-Thank you to my mentor Daisy McGirr for her guidance.
+Or download the ZIP from the **Code** dropdown on GitHub.
 
-Based idea:
+---
 
-https://www.youtube.com/watch?v=PBcqGxrr9g8&t=1004s
+## Future Plans
 
-Loop:
+- Add more questions (aiming for 30+)
+- Image-based questions — identify the killer or survivor from a screenshot
+- Difficulty tiers: Survivor / Killer / Entity
+- Timer-based challenge mode
+- Local high score tracking
 
-https://www.tutorialspoint.com/javascript/javascript_for_loop.htm
+---
 
-Hero image:
+## Credits
 
-https://wallpapercave.com/dead-by-daylight-wallpapers
+**Mentor:** Daisy McGirr — for guidance throughout the project
 
-resetState:
+**Tutorial reference:** [Build a Quiz App with JavaScript](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=1004s) by Web Dev Simplified
 
-https://stackoverflow.com/questions/75571616/quiz-in-javascript
+**Resources used:**
+- [JavaScript For Loop — TutorialsPoint](https://www.tutorialspoint.com/javascript/javascript_for_loop.htm)
+- [Quiz resetState fix — StackOverflow](https://stackoverflow.com/questions/75571616/quiz-in-javascript)
+- [JavaScript Docstrings — Dev.to](https://dev.to/stephencweiss/write-your-own-javascript-contracts-and-docstrings-42ho)
 
-Docstrings:
+**Assets:**
+- Hero image: [WallpaperCave — Dead by Daylight Wallpapers](https://wallpapercave.com/dead-by-daylight-wallpapers)
+- Favicon: [CleanPNG — Dead by Daylight](https://www.cleanpng.com/free/dead-by-daylight.html)
 
-https://dev.to/stephencweiss/write-your-own-javascript-contracts-and-docstrings-42ho
+---
 
-Favicon:
-
-https://www.cleanpng.com/free/dead-by-daylight.html
+*Created by Timothy Y W*
