@@ -295,6 +295,19 @@ ul li::marker {
     color: #fff;
 }
 
+/* Question image */
+
+#question-image {
+    max-width: 75%;
+    max-height: 240px;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 1px solid var(--blood-red);
+    margin: 12px auto;
+    display: block;
+    box-shadow: 0 0 15px rgba(139, 0, 0, 0.4);
+}
+
 /* Answer feedback */
 
 .correct {

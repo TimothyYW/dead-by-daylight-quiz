@@ -88,6 +88,36 @@ const questions = [
             { text: "Meg Thomas", correct: false },
             { text: "Gabriel Soma", correct: false },
         ]
+    },
+    {
+        question: "Which killer is shown here?",
+        image: "assets/images/questions/killer-1.jpg",
+        answers: [
+            { text: "The Nurse", correct: true },
+            { text: "The Spirit", correct: false },
+            { text: "The Hag", correct: false },
+            { text: "The Onryo", correct: false },
+        ]
+    },
+    {
+        question: "Which survivor is shown here?",
+        image: "assets/images/questions/survivor-1.jpg",
+        answers: [
+            { text: "Feng Min", correct: true },
+            { text: "Nea Karlsson", correct: false },
+            { text: "Kate Denson", correct: false },
+            { text: "Claudette Morel", correct: false },
+        ]
+    },
+    {
+        question: "Which realm does this map belong to?",
+        image: "assets/images/questions/map-1.jpg",
+        answers: [
+            { text: "Coldwind Farm", correct: true },
+            { text: "MacMillan Estate", correct: false },
+            { text: "Springwood", correct: false },
+            { text: "Haddonfield", correct: false },
+        ]
     }
 ];
 
@@ -134,6 +164,15 @@ function showQuestion() {
 
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 
+    if (currentQuestion.image) {
+        const img = document.createElement("img");
+        img.id = "question-image";
+        img.src = currentQuestion.image;
+        img.alt = "Question image";
+        img.onerror = () => img.remove();
+        questionElement.insertAdjacentElement("afterend", img);
+    }
+
     const letters = ["A", "B", "C", "D"];
     currentQuestion.answers.forEach((answer, index) => {
         const button = document.createElement("button");
@@ -148,10 +187,12 @@ function showQuestion() {
 }
 
 /**
- * Hides the next button and clears all rendered answer buttons.
+ * Hides the next button, removes any question image, and clears answer buttons.
  */
 function resetState() {
     nextButton.style.display = "none";
+    const existingImg = document.getElementById("question-image");
+    if (existingImg) existingImg.remove();
     while (answerOptions.firstChild) {
         answerOptions.removeChild(answerOptions.firstChild);
     }

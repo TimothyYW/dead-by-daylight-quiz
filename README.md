@@ -27,7 +27,8 @@ The landing page sets the atmosphere with the game's iconic dark background. An 
 
 ### The Trial — Quiz
 
-- **10 randomized questions** per run — shuffled on every playthrough for replayability
+- **13 randomized questions** per run — shuffled on every playthrough for replayability
+- **Image questions** — some questions display an in-game screenshot above the answers
 - **Progress bar** tracks how far into the trial you are
 - **Instant feedback** — correct answers glow green, wrong ones flash red with a shake
 - **Answer lock** — once selected, you cannot change your pick
@@ -199,7 +200,6 @@ Or download the ZIP from the **Code** dropdown on GitHub.
 ## Future Plans
 
 - Add more questions (aiming for 30+)
-- Image-based questions — identify the killer or survivor from a screenshot
 - Difficulty tiers: Survivor / Killer / Entity
 - Timer-based challenge mode
 - Local high score tracking
