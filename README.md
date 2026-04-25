@@ -6,7 +6,7 @@ A browser-based trivia game for Dead by Daylight fans. Test your knowledge of su
 
 ![Mock-up Screenshot](assets/screenshots/Mock-up-screenshot.JPG)
 
-[Play Now](https://timothyyw.github.io/Dead-by-daylight-quiz/)
+[Play Now](https://timothyyw.github.io/dead-by-daylight-quiz/)
 
 ---
 
@@ -186,10 +186,10 @@ Each commit creates a versioned snapshot you can compare against previous states
 
 ```bash
 # HTTPS
-git clone https://github.com/TimothyYW/Dead-by-daylight-quiz.git
+git clone https://github.com/TimothyYW/dead-by-daylight-quiz.git
 
 # SSH
-git clone git@github.com:TimothyYW/Dead-by-daylight-quiz.git
+git clone git@github.com:TimothyYW/dead-by-daylight-quiz.git
 ```
 
 Or download the ZIP from the **Code** dropdown on GitHub.
