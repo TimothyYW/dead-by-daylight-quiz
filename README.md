@@ -47,7 +47,7 @@ After all 10 questions, your score is revealed alongside a message from the Enti
 | 7 – 8 | "The Entity takes notice... Your knowledge is formidable." |
 | 9 – 10 | "You are one with the fog. The Entity bows before your knowledge!" |
 
-![Score Screen](assets/screenshots/game-result-screenshot.JPG)
+![Score Screen](assets/screenshots/end-of-quiz-screenshot.JPG)
 
 ### Navigation
 
@@ -186,10 +186,10 @@ Each commit creates a versioned snapshot you can compare against previous states
 
 ```bash
 # HTTPS
-git clone https://github.com/timothyyw/Dead-by-daylight-quiz.git
+git clone https://github.com/TimothyYW/Dead-by-daylight-quiz.git
 
 # SSH
-git clone git@github.com:timothyyw/Dead-by-daylight-quiz.git
+git clone git@github.com:TimothyYW/Dead-by-daylight-quiz.git
 ```
 
 Or download the ZIP from the **Code** dropdown on GitHub.
